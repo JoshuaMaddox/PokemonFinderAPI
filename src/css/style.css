@@ -1,0 +1,143 @@
+.pokeInput {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.btn {
+  margin-left: 15px;
+}
+
+.pokeRow {
+  margin-top: 30px;
+}
+
+.pokeDisplay {
+  float: none;
+  display: inline-block;
+  margin: 5px 12px 5px 12px;
+  padding: 15px;
+  height: 280px;
+  width: 180px;
+  background-color: #16a085;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.pokeRow:last-of-type {
+  margin-right: 0;
+}
+
+.pokeButtons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.pokeListItem{
+  display: inline-block;
+  background-color: #16a085;
+  width: 120px;
+  padding: 10px 5px 10px 5px;
+  color: white;
+  margin: 2px 2px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.pokeListItem:hover{
+  background-color: #e74c3c;
+}
+
+.pokeText{
+  color: #2c3e50;
+}
+
+.onePokeCard {
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+  background-color: #1abc9c;
+  width: 150px;
+  height: 250px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+.onePokeImg{
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  padding: 0 27px 0 27px;
+}
+
+.onePokeData{
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.deletBtn{
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  right: -10px;
+  top: -10px;
+  padding: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.deletBtn:hover{
+  padding: 3px;
+  font-size: 11px;
+  transform: scale(1.1); 
+  transition: all .1s ease-in;
+
+}
+.pokeHrOne {
+  position: absolute;
+  top: 119px;
+  width: 80%;
+  left: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.pokeHrTwo {
+  position: absolute;
+  top: 154px;
+  width: 80%;
+  left: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.pokeHrThree {
+  position: absolute;
+  top: 189px;
+  width: 80%;
+  left: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.pokeName{
+  position: absolute;
+  top: 113px;
+  left: 15px;
+}
+.pokeOrder{
+  position: absolute;
+  top: 148px;
+  left: 15px;
+}
+.pokeHeight{
+  position: absolute;
+  top: 183px;
+  left: 15px;
+}
+.pokeWeight{
+  position: absolute;
+  top: 218px;
+  left: 15px;
+}
+
+
+            
