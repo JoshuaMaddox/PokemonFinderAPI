@@ -75,7 +75,7 @@ export default class Layout extends Component {
        isPokemon = ( <div className="container">
           <div className="row pokeTop text-center">
             <div className="col-xs-12 pokeInput">
-              <h1>Brain Rot for Fools. Enjoy Fools.</h1>
+              <h1>FIND YOU SOME POKEMONS</h1>
               <h4>(enter a number below to get a pokey thing)</h4>
               <form onSubmit={this.fetchPokemon}>
                 <input type="number" ref='pokemonNumber' required/>
