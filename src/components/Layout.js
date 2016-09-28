@@ -3,6 +3,7 @@ import PokemonActions from '../actions/PokemonActions'
 import DisplayAllPoke from './DisplayAllPoke'
 import PokemonStore from '../stores/PokemonStore'
 import DeleteAction from '../actions/DeleteAction'
+import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup'
 
 export default class Layout extends Component {
   constructor() {
@@ -82,9 +83,13 @@ export default class Layout extends Component {
                 <button className="btn btn-primary">Get Pokemon</button>
               </form>
             </div>{/* col-xs-12 POKE INPUT */}
-          </div>{/* ROW */}
+          </div>{/* ROW */} 
           <div className="row pokeRow text-center">
           {this.state.pokemon.map((item, index) =>(
+            <ReactCSSTransitionGroup 
+              transitionName="example" 
+              transitionAppear={true} 
+              transitionAppearTimeout={1500}>
             <div className="pokeDisplay" key={index} id={index}>
               <div className="onePokeDisplay text-center">
                   <div className="onePokeCard">
@@ -100,11 +105,17 @@ export default class Layout extends Component {
                   </div>
               </div>
             </div>
+            </ReactCSSTransitionGroup>
           ))} 
           </div>{/* ROW */}
           <div className="row">
             <div className="col-xs-12">
+              <ReactCSSTransitionGroup 
+                transitionName="example" 
+                transitionAppear={true} 
+                transitionAppearTimeout={1500}>
               <DisplayAllPoke fetchPokemon={this.fetchPokemon}/>
+              </ReactCSSTransitionGroup>
             </div>{/* col-xs-12 */}
           </div>{/* ROW */}
         {/* CONTAINER*/}
